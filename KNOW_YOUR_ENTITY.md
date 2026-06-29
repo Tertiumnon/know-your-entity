@@ -197,7 +197,7 @@ class User {
 // GET /user/{id}
 {
   "userName": "Bob",
-  "userEmail": "bob@bob.bo
+  "userEmail": "bob@bob.bo"
 }
 ```
 
@@ -207,7 +207,7 @@ class User {
 // GET /user/{id}
 {
   "name": "Bob",
-  "email": "bob@bob.bo
+  "email": "bob@bob.bo"
 }
 ```
 
