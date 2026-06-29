@@ -52,6 +52,8 @@ Detailed naming guides for variables, functions, classes, and files.
 - **[Functions & Methods](docs/02-naming-conventions/functions-methods.md)** — Verbs (get, find, fetch, create, etc.)
 - **[Classes & Interfaces](docs/02-naming-conventions/classes-interfaces.md)** — PascalCase, suffixes (Service, Controller, Repository)
 - **[Files & Folders](docs/02-naming-conventions/files-folders.md)** — kebab-case, consistency, alignment
+- **[File Type Suffixes](docs/02-naming-conventions/file-type-suffixes.md)** — Be specific: .repo.ts, .validator.ts, .mapper.ts, not just .service.ts
+- **[Barrel Exports](docs/02-naming-conventions/barrel-exports.md)** — Why central index files are an antipattern
 - **[Anti-Patterns](docs/02-naming-conventions/anti-patterns.md)** — Common mistakes and how to fix them
 
 ### [3. Entity Structure](docs/03-entity-structure/)
@@ -60,6 +62,7 @@ Principles for designing entities, DTOs, and relationships.
 
 - **[Flat Entities](docs/03-entity-structure/flat-entities.md)** — Core principle: keep domain models flat
 - **[DTO vs Domain Model](docs/03-entity-structure/dto-vs-domain.md)** — When nesting is acceptable
+- **[Common Interfaces](docs/03-entity-structure/common-interfaces.md)** — Shared interfaces (Timestamps, Identifiable, etc.)
 - **[Relationships & References](docs/03-entity-structure/relationships.md)** — Foreign keys vs embedded objects
 - **[Denormalization](docs/03-entity-structure/denormalization.md)** — When and why to denormalize
 - **[Examples](docs/03-entity-structure/examples.md)** — Real entity examples (User, Product, Order)
@@ -88,7 +91,8 @@ HTML, CSS, JavaScript, and component conventions.
 
 Project structure, folder organization, and no-nesting rules.
 
-- **[Folder Structure](docs/06-architecture/folder-structure.md)** — 4-level structure: core, entities, components, pages
+- **[Folder Structure](docs/06-architecture/folder-structure.md)** — 4-level structure: core, entities, components/libs, pages/routes
+- **[Module Organization](docs/06-architecture/module-organization.md)** — Entity folders with consistent file naming patterns
 - **[No Nesting Rule](docs/06-architecture/no-nesting-rule.md)** — Maximum 3 levels explanation and enforcement
 - **[Component Collocation](docs/06-architecture/component-collocation.md)** — Keeping related files together
 - **[Separation of Concerns](docs/06-architecture/separation-of-concerns.md)** — How core, entities, components, pages differ
